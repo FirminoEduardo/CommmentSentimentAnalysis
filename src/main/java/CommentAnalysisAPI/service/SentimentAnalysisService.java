@@ -3,9 +3,11 @@ package CommentAnalysisAPI.service;
 import CommentAnalysisAPI.model.Comment;
 import CommentAnalysisAPI.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-public class SentimentalAnalysisService {
+@Service
+public class SentimentAnalysisService {
 
     @Autowired
     private CommentRepository commentRepository;
